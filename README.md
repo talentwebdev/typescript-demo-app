@@ -80,3 +80,23 @@ function generateError(message: string, code: number): never {
     throw { message: message, errorCode: code };
 }
 ```
+
+**What source .map files do?**
+It act as bridge to connect ts file to js file in modern web browser dev tools.
+It's super convenient in debugging typescript code in the browser. 
+
+
+## Typescript CLI commands
+**Compile single file**
+```
+tsc [file]
+```
+**Init TS**
+```
+tsc init
+```
+This will create tsconfig.json.
+**Run in watch mode**
+```
+tsc -w
+```
